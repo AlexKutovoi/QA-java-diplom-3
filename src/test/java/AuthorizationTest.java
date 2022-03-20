@@ -32,7 +32,7 @@ public class AuthorizationTest extends BaseTest {
                 .setEmail(email)
                 .setPassword(password)
                 .clickLoginLink();
-        assertTrue("not transaction to the authorization page", mainPage.tapOnPersonalAccount());
+        assertTrue("not transaction to the authorization page!", mainPage.tapOnPersonalAccount());
     }
 
     @Test
