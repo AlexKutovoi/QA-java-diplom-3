@@ -36,7 +36,7 @@ public class AuthorizationTest extends BaseTest {
     }
 
     @Test
-    @DisplayName("error authorization")
+    @DisplayName("error authorization!")
     public void invalidRegistration() {
         mainPage
                 .tapAuthorizedButton();
