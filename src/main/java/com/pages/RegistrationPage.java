@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import static com.codeborne.selenide.Selenide.page;
-import static com.codeborne.selenide.Selenide.sleep;
 
 public class RegistrationPage {
     public static final String URL = "https://stellarburgers.nomoreparties.site/register";
@@ -66,7 +65,7 @@ public class RegistrationPage {
     @Step("tap on enter link")
     public LoginPage clickLoginLink() {
         enterLink.click();
-        sleep(1500);
+        //sleep(1500);
         return page(LoginPage.class);
     }
 

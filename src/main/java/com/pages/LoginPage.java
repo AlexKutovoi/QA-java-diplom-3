@@ -7,7 +7,6 @@ import org.openqa.selenium.support.How;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.page;
-import static com.codeborne.selenide.Selenide.sleep;
 
 public class LoginPage {
 
@@ -36,7 +35,6 @@ public class LoginPage {
     @Step("tap on register button")
     public RegistrationPage clickRegister() {
         registerButton.click();
-        sleep(500);
         return page(RegistrationPage.class);
     }
 

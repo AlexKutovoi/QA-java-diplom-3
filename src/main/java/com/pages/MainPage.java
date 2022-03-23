@@ -88,19 +88,19 @@ public class MainPage {
     }
 
     @Step("get text buns")
-    public boolean getTextBuns() {
+    public boolean setTextBuns() {
         bunsButton.shouldHave(exactText("Булки"));
         return true;
     }
 
     @Step("get text sauce")
-    public boolean getTextSauce() {
+    public boolean setTextSauce() {
         sauceButton.shouldHave(exactText("Соусы"));
         return true;
     }
 
     @Step("get text filling")
-    public boolean getTextFilling() {
+    public boolean setTextFilling() {
         fillingButton.shouldHave(exactText("Начинки"));
         return true;
     }
