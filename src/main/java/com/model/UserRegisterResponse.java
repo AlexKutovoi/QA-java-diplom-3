@@ -1,5 +1,4 @@
 package com.model;
-import com.model.User;
 
 public class UserRegisterResponse {
       private boolean success;
@@ -38,4 +37,6 @@ public class UserRegisterResponse {
     public void setUser(User user) {
         this.user = user;
     }
+
+
 }
