@@ -7,7 +7,6 @@ import org.openqa.selenium.support.How;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.page;
-import static com.codeborne.selenide.Selenide.sleep;
 
 public class ProfilePage {
 
@@ -25,7 +24,7 @@ public class ProfilePage {
     private SelenideElement constructorButton;
 
     @Step("Клик по кнопке Конструктор")
-    public MainPage clickConstructorButton() {
+    public MainPage tapConstructorButton() {
         constructorButton.click();
         return page(MainPage.class);
     }
@@ -37,13 +36,11 @@ public class ProfilePage {
     @Step("tap on logout button")
     public LoginPage tapLogoutButton() {
         logoutButton.click();
-        sleep(1500);
         return page(LoginPage.class);
     }
     @Step("visible logout button")
     public boolean visibleLogoutButton() {
         logoutButton.shouldBe(visible);
-
         return true;
     }
 }

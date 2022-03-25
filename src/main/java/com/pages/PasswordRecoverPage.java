@@ -19,9 +19,9 @@ public class PasswordRecoverPage {
     @FindBy(how = How.XPATH, using = "//button[contains(text(),'Восстановить')]")
     private SelenideElement recoverButton;// recover button
 
-    // title recover
+    // password recover
     @FindBy(how = How.XPATH, using = "//h2[contains(text(),'Восстановление пароля')]")
-    private SelenideElement titleRecover;
+    private SelenideElement passwordRecover;
 
     @Step("tap on recover link")
     public LoginPage tapRecoverLink() {
@@ -34,9 +34,9 @@ public class PasswordRecoverPage {
         recoverButton.click();
         return page(LoginPage.class);
     }
-    @Step("visible title recover name")
-    public boolean titleRecoverName(){
-        titleRecover.shouldBe(visible);
+    @Step("visible link recover password")
+    public boolean linkRecoverPassword(){
+        passwordRecover.shouldBe(visible);
         return true;
     }
 

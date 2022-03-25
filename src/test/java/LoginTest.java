@@ -77,7 +77,7 @@ public class LoginTest extends BaseTest{
                 .setEmail(testData.get("email"));
         passwordRecoverPage
                 .tapRecoverButton();
-        assertTrue("failed enter in recovery link", passwordRecoverPage.titleRecoverName());
+        assertTrue("failed enter in recovery link", passwordRecoverPage.linkRecoverPassword());
     }
 
     @After

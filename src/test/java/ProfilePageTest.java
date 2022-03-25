@@ -33,7 +33,6 @@ public class ProfilePageTest extends BaseTest {
     @Test
     @DisplayName("transition from the personal account by clicking on the logo")
     public void logoClickTest() {
-        String expectedUrl = "https://stellarburgers.nomoreparties.site/";
         LoginPage loginPage = page(LoginPage.class);
         MainPage mainPage = page(MainPage.class);
         ProfilePage profilePage = page(ProfilePage.class);
@@ -50,7 +49,6 @@ public class ProfilePageTest extends BaseTest {
     @Test
     @DisplayName("transition from the main page by clicking personal account")
     public void personalAccountTest() {
-        String expectedUrl = "https://stellarburgers.nomoreparties.site/";
         LoginPage loginPage = page(LoginPage.class);
         MainPage mainPage = page(MainPage.class);
         ProfilePage profilePage = page(ProfilePage.class);
@@ -66,7 +64,6 @@ public class ProfilePageTest extends BaseTest {
     @Test
     @DisplayName("transition from the personal account by clicking on the constructor")
     public void constructorClickTest() {
-        String expectedUrl = "https://stellarburgers.nomoreparties.site/";
         LoginPage loginPage = page(LoginPage.class);
         MainPage mainPage = page(MainPage.class);
         ProfilePage profilePage = page(ProfilePage.class);
@@ -76,14 +73,13 @@ public class ProfilePageTest extends BaseTest {
         mainPage
                 .tapAccountButton();
         profilePage
-                .clickConstructorButton();
+                .tapConstructorButton();
         assertTrue("transition did not occur to the main page by clicking personal account", mainPage.makeOrderButtonVisible());
     }
 
     @Test
     @DisplayName("logout in personal account")
     public void logoutTest() {
-        String expectedUrl = "https://stellarburgers.nomoreparties.site/";
         LoginPage loginPage = page(LoginPage.class);
         MainPage mainPage = page(MainPage.class);
         ProfilePage profilePage = page(ProfilePage.class);
